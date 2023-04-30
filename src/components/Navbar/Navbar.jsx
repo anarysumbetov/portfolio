@@ -35,7 +35,7 @@ const Navbar = () => {
                             Portfolio
                         </Link>
                     </li>
-                    <li>Testimonial
+                    <li>
                         <Link to="testimonial" spy={true} smooth={true}>
                             Testimonial
                         </Link>
