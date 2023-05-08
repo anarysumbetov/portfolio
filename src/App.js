@@ -5,6 +5,7 @@ import Experience from "./components/Experience/Experience.jsx";
 import Works from "./components/Works/Works.jsx";
 import Portfolio from "./components/Portfolio/Portfolio.jsx";
 import Testimonial from "./components/Testimonial/Testimonial.jsx";
+import Contact from "./components/Contact/Contact.jsx";
 
 import "./App.css"
 
@@ -18,6 +19,7 @@ function App() {
       <Works />
       <Portfolio />
       <Testimonial />
+      <Contact />
     </div>
   );
 }
