@@ -6,6 +6,7 @@ import Sidebar from "../../img/sidebar.png";
 import Ecommerce from "../../img/ecommerce.png";
 import HOC from "../../img/hoc.png";
 import MusicApp from "../../img/musicapp.png";
+import YouTubeClone from "../../img/capture-youtube-clone.png";
 import { themeContext } from "../../Context.js";
 
 const Portfolio = () => {
@@ -37,6 +38,11 @@ const Portfolio = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={HOC} alt="hoc" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <a href="https://youtube-clone-315au.netlify.app/" rel="noopener noreferrer" target="_blank">
+                        <img src={YouTubeClone} alt="youtube-clone" />
+                    </a>
                 </SwiperSlide>
             </Swiper>
         </div>
