@@ -11,11 +11,7 @@ import Resume from "./resume.pdf";
 const Services = () => {
     // context
     const theme = useContext(themeContext);
-
-    const themeState = theme === null || theme === undefined ? undefined : theme.state;
-    // it is the same like const themeState = theme?.state;
-    const darkMode = themeState === null || themeState === undefined ? undefined : themeState.darkMode;
-    // it is the same like const darkMode = theme?.state?.darkMode;
+    const darkMode = theme?.state?.darkMode;
 
     // transition
     const transition = {

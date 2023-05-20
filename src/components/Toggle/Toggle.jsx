@@ -2,25 +2,30 @@ import React, { useContext } from "react";
 import "./Toggle.css";
 import Moon from "@iconscout/react-unicons/icons/uil-moon";
 import Sun from "@iconscout/react-unicons/icons/uil-sun";
-import { themeContext } from "../../Context";
+import { themeContext } from "../../Context.js";
+import { TOGGLE } from "../../constants/actionTypes.js";
 
 const Toggle = () => {
-  {/* 
     const theme = useContext(themeContext);
-
-    const themeState = theme === null || theme === undefined ? undefined : theme.state;
-    // it is the same like const themeState = theme?.state;
-    const darkMode = themeState === null || themeState === undefined ? undefined : themeState.darkMode;
-    // it is the same like const darkMode = theme?.state?.darkMode;
+    const darkMode = theme?.state?.darkMode;
 
     const handleClick = () => {
       // debugger
-      theme.dispatch({ type: "toggle" });
+      const themeDispatch = theme?.dispatch;
+
+      themeDispatch({ type: TOGGLE });
     };
-  */}
 
   return (
-    <div>Toogle</div> 
+    <div className="toggle" onClick={handleClick}>
+      <Moon />
+      <Sun />
+      {/* toggle.css mein left ki property aik assign hy ussy delete krna hy pehly */}
+      <div
+        className="t-button"
+        style={darkMode ? { left: "2px" } : { right: "2px" }}
+      ></div>
+    </div>
   )
 }
 
