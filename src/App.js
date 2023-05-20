@@ -6,6 +6,7 @@ import Works from "./components/Works/Works.jsx";
 import Portfolio from "./components/Portfolio/Portfolio.jsx";
 import Testimonial from "./components/Testimonial/Testimonial.jsx";
 import Contact from "./components/Contact/Contact.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 import "./App.css"
 
@@ -20,6 +21,7 @@ function App() {
       <Portfolio />
       <Testimonial />
       <Contact />
+      <Footer />
     </div>
   );
 }
