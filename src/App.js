@@ -8,11 +8,23 @@ import Testimonial from "./components/Testimonial/Testimonial.jsx";
 import Contact from "./components/Contact/Contact.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 
+import { useContext } from "react";
+import { themeContext } from "./Context";
+
 import "./App.css"
 
 function App() {
+  const theme = useContext(themeContext);
+  const darkMode = theme?.state?.darkMode;
+
   return (
-    <div className="App">
+    <div 
+      className="App"
+      style={{
+        background: darkMode ? "black" : "",
+        color: darkMode ? "white" : "",
+      }}
+    >
       <Navbar />
       <Intro />
       <Services />
